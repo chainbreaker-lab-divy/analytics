@@ -1,0 +1,10 @@
+name: lint
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: chainbreaker-lab-divy/cb-lint-reporter@v1
